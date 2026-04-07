@@ -1,0 +1,1171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayushi's Clinic | Premium Family & Cosmetic Dental Care in [City]</title>
+    <meta
+      name="description"
+      content="Ayushi's Clinic is a modern dental clinic in [City] for family dental care, teeth cleaning, cosmetic dentistry, dental implants, and emergency dentist appointments. Book online, call now, or WhatsApp us."
+    />
+    <meta
+      name="keywords"
+      content="dental clinic [City], best dentist [City], family dental care, emergency dentist, cosmetic dentist, teeth cleaning, dental implants, teeth whitening"
+    />
+    <meta name="theme-color" content="#0d6efd" />
+    <meta property="og:title" content="Ayushi's Clinic | Gentle, Trusted Dental Care" />
+    <meta
+      property="og:description"
+      content="Comfort-focused dental care for families, kids, and professionals. Same-day emergency appointments available."
+    />
+    <meta property="og:type" content="website" />
+    <style>
+      :root {
+        --bg: #f6fbff;
+        --surface: #ffffff;
+        --text: #10233f;
+        --muted: #486081;
+        --primary: #1677ff;
+        --primary-dark: #0d5ed6;
+        --teal: #00a8a8;
+        --line: #d7e6f9;
+        --danger: #e95353;
+        --shadow: 0 16px 35px rgba(19, 57, 108, 0.12);
+        --radius: 16px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: linear-gradient(180deg, #f7fcff 0%, #ffffff 35%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .container {
+        width: min(1120px, 92vw);
+        margin: 0 auto;
+      }
+
+      .section {
+        padding: 84px 0;
+      }
+
+      .section-head {
+        max-width: 760px;
+        margin-bottom: 34px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--teal);
+        margin-bottom: 12px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0 0 14px;
+        line-height: 1.2;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 20px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        font-weight: 600;
+        font-size: 0.96rem;
+        transition: all 0.25s ease;
+        cursor: pointer;
+      }
+
+      .btn-primary {
+        background: linear-gradient(90deg, var(--primary) 0%, #2898ff 100%);
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(22, 119, 255, 0.25);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-1px);
+        background: linear-gradient(90deg, var(--primary-dark) 0%, #1f88f0 100%);
+      }
+
+      .btn-outline {
+        border-color: #adcfff;
+        color: var(--primary-dark);
+        background: #fff;
+      }
+
+      .btn-outline:hover {
+        border-color: var(--primary);
+        background: #eff6ff;
+      }
+
+      .btn-teal {
+        background: var(--teal);
+        color: #fff;
+      }
+
+      .btn-teal:hover {
+        background: #008f8f;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid #e8f1ff;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 76px;
+        gap: 16px;
+      }
+
+      .logo {
+        font-weight: 800;
+        font-size: 1.18rem;
+        color: #0f3766;
+      }
+
+      .logo span {
+        color: var(--teal);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+      }
+
+      .nav-links a {
+        color: #2b4263;
+        font-size: 0.95rem;
+        font-weight: 500;
+      }
+
+      .nav-cta {
+        display: flex;
+        gap: 10px;
+      }
+
+      .menu-btn {
+        display: none;
+        background: transparent;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        font-size: 1.2rem;
+        padding: 8px 10px;
+      }
+
+      .hero {
+        padding: 54px 0 46px;
+      }
+
+      .hero-wrap {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 26px;
+        align-items: center;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 999px;
+        background: #ebf5ff;
+        color: #0e5dbf;
+        font-weight: 600;
+        font-size: 0.83rem;
+        padding: 8px 12px;
+        margin-bottom: 14px;
+      }
+
+      .hero h1 {
+        font-size: clamp(1.9rem, 4vw, 3rem);
+        color: #0f2f57;
+      }
+
+      .hero p {
+        font-size: 1.03rem;
+      }
+
+      .hero-actions {
+        margin-top: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .microcopy {
+        margin-top: 14px;
+        font-size: 0.9rem;
+        color: #527091;
+      }
+
+      .trust-list {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px 14px;
+      }
+
+      .trust-item {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        color: #204a78;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+
+      .hero-card-wrap {
+        display: grid;
+        gap: 14px;
+      }
+
+      .hero-image {
+        border-radius: 24px;
+        min-height: 360px;
+        overflow: hidden;
+        background: radial-gradient(circle at top right, #d4f8ff 0%, #eff7ff 45%, #ffffff 100%);
+        border: 1px solid #e2efff;
+        box-shadow: var(--shadow);
+        display: grid;
+        place-items: center;
+        padding: 26px;
+      }
+
+      .placeholder-visual {
+        width: 100%;
+        height: 100%;
+        border: 2px dashed #8cc3ff;
+        border-radius: 18px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        color: #376291;
+        font-weight: 600;
+      }
+
+      .ui-card {
+        background: #fff;
+        border: 1px solid #deebff;
+        border-radius: 14px;
+        padding: 14px;
+        box-shadow: 0 9px 20px rgba(17, 58, 112, 0.08);
+      }
+
+      .ui-card strong {
+        display: block;
+        color: #143a67;
+      }
+
+      .trust-strip {
+        border-top: 1px solid #e7f0ff;
+        border-bottom: 1px solid #e7f0ff;
+        background: #f7fbff;
+      }
+
+      .trust-grid {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 10px;
+        padding: 16px 0;
+      }
+
+      .trust-grid div {
+        background: #fff;
+        border: 1px solid #deebff;
+        border-radius: 999px;
+        text-align: center;
+        font-size: 0.84rem;
+        font-weight: 600;
+        color: #1f4d7f;
+        padding: 10px;
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .card {
+        background: #fff;
+        border: 1px solid #e0ecff;
+        border-radius: var(--radius);
+        padding: 20px;
+        box-shadow: 0 10px 24px rgba(30, 72, 124, 0.08);
+      }
+
+      .card h3 {
+        font-size: 1.05rem;
+        color: #113b69;
+      }
+
+      .icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        background: #ebf4ff;
+        display: grid;
+        place-items: center;
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+      }
+
+      .card .link {
+        margin-top: 12px;
+        display: inline-block;
+        color: var(--primary-dark);
+        font-weight: 600;
+      }
+
+      .choose-grid,
+      .about-grid,
+      .contact-grid,
+      .payment-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      .bullet-list {
+        list-style: none;
+        margin: 20px 0 0;
+        padding: 0;
+        display: grid;
+        gap: 11px;
+      }
+
+      .bullet-list li {
+        padding-left: 26px;
+        position: relative;
+        color: #29496f;
+      }
+
+      .bullet-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--teal);
+        font-weight: 800;
+      }
+
+      .before-after {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .ba-item {
+        background: #fff;
+        border: 1px solid #deebff;
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .ba-image {
+        aspect-ratio: 4 / 3;
+        background: linear-gradient(120deg, #e2f0ff, #f8fdff);
+        border-bottom: 1px solid #deebff;
+        display: grid;
+        place-items: center;
+        color: #315b89;
+        font-size: 0.87rem;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .ba-item p {
+        padding: 12px;
+        font-size: 0.92rem;
+      }
+
+      .testimonials {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .stars {
+        color: #ffb400;
+        font-size: 1rem;
+        margin-bottom: 8px;
+      }
+
+      .process-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .step {
+        background: #fff;
+        border: 1px solid #deebff;
+        border-radius: 14px;
+        padding: 18px;
+      }
+
+      .step .num {
+        width: 32px;
+        height: 32px;
+        border-radius: 999px;
+        background: #eaf4ff;
+        color: #0d5fce;
+        display: grid;
+        place-items: center;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .emergency {
+        background: linear-gradient(90deg, #0f3564 0%, #155396 50%, #0a7f89 100%);
+        color: #fff;
+      }
+
+      .emergency p,
+      .emergency li {
+        color: #eff7ff;
+      }
+
+      .emergency ul {
+        margin: 12px 0 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px;
+        padding-left: 20px;
+      }
+
+      .faq details {
+        border: 1px solid #deebff;
+        background: #fff;
+        border-radius: 12px;
+        padding: 14px;
+        margin-bottom: 10px;
+      }
+
+      .faq summary {
+        font-weight: 600;
+        cursor: pointer;
+        color: #163f6e;
+      }
+
+      .faq details p {
+        margin-top: 8px;
+      }
+
+      .form-card {
+        background: #fff;
+        border: 1px solid #deebff;
+        border-radius: var(--radius);
+        padding: 22px;
+        box-shadow: 0 12px 22px rgba(16, 59, 116, 0.08);
+      }
+
+      form {
+        display: grid;
+        gap: 12px;
+      }
+
+      .field-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      label {
+        display: block;
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: #24486f;
+        margin-bottom: 5px;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        border: 1px solid #cfe2fd;
+        border-radius: 10px;
+        padding: 11px 12px;
+        font: inherit;
+      }
+
+      textarea {
+        min-height: 100px;
+        resize: vertical;
+      }
+
+      .check {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+        font-size: 0.86rem;
+        color: #426386;
+      }
+
+      .map {
+        border: 1px dashed #98bdef;
+        border-radius: 12px;
+        min-height: 220px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        color: #355d8a;
+        background: #f5faff;
+        padding: 10px;
+      }
+
+      footer {
+        background: #0f2849;
+        color: #d9e8ff;
+        padding: 50px 0 20px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr 1fr;
+        gap: 20px;
+      }
+
+      footer p,
+      footer a {
+        color: #bbd3f5;
+        font-size: 0.92rem;
+      }
+
+      .floating-whatsapp {
+        position: fixed;
+        right: 18px;
+        bottom: 84px;
+        z-index: 40;
+      }
+
+      .floating-whatsapp .btn {
+        border-radius: 12px;
+      }
+
+      .mobile-sticky {
+        display: none;
+        position: fixed;
+        z-index: 45;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid #cfe3ff;
+        padding: 8px;
+        gap: 8px;
+      }
+
+      .mobile-sticky .btn {
+        flex: 1;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 0.86rem;
+      }
+
+      .success {
+        display: none;
+        margin-top: 10px;
+        border: 1px solid #a8e6ce;
+        background: #ebfff5;
+        color: #10683f;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 980px) {
+        .nav-links,
+        .nav-cta {
+          display: none;
+        }
+
+        .menu-btn {
+          display: block;
+        }
+
+        .nav-links.open {
+          display: grid;
+          position: absolute;
+          top: 76px;
+          left: 0;
+          right: 0;
+          background: #fff;
+          padding: 14px 4vw 18px;
+          border-bottom: 1px solid #dceafd;
+          gap: 10px;
+        }
+
+        .nav-cta.open {
+          display: flex;
+          position: absolute;
+          top: 250px;
+          left: 4vw;
+          right: 4vw;
+          background: #fff;
+          padding-bottom: 14px;
+        }
+
+        .hero-wrap,
+        .choose-grid,
+        .about-grid,
+        .payment-grid,
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .trust-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .card-grid,
+        .before-after,
+        .testimonials,
+        .process-grid,
+        .footer-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 700px) {
+        .section {
+          padding: 64px 0;
+        }
+
+        .card-grid,
+        .before-after,
+        .testimonials,
+        .process-grid,
+        .footer-grid,
+        .field-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .mobile-sticky {
+          display: flex;
+        }
+
+        body {
+          padding-bottom: 68px;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Ayushi's Clinic",
+        "image": "[Clinic Image URL Placeholder]",
+        "description": "Modern dental clinic in [City] providing family dental care, cosmetic dentistry, emergency dental care, and gentle comfort-focused treatment.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "[Street Address Placeholder]",
+          "addressLocality": "[City]",
+          "addressRegion": "[State/Region]",
+          "postalCode": "[Postal Code]",
+          "addressCountry": "[Country]"
+        },
+        "telephone": "[Phone Number Placeholder]",
+        "email": "[Email Placeholder]",
+        "url": "[Website URL Placeholder]",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          }
+        ],
+        "areaServed": "[City + Nearby Areas Placeholder]",
+        "priceRange": "$$"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a href="#home" class="logo">Ayushi's <span>Clinic</span></a>
+        <nav id="mainNav" class="nav-links" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div id="navCta" class="nav-cta">
+          <a class="btn btn-primary" href="#book">Book Appointment</a>
+          <a class="btn btn-outline" href="tel:+10000000000">Call Now</a>
+        </div>
+        <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-wrap">
+          <div>
+            <span class="badge">Same-day appointments available*</span>
+            <h1>
+              Gentle, expert dental care that helps your family smile with confidence.
+            </h1>
+            <p>
+              Welcome to Ayushi's Clinic — a premium dental clinic in <strong>[City]</strong>
+              where comfort, hygiene, and results come first. From routine teeth cleaning to
+              cosmetic smile makeovers and emergency dental treatment, we make every visit calm,
+              clear, and reassuring.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#book">Book Appointment</a>
+              <a class="btn btn-outline" href="tel:+10000000000">Call Now</a>
+              <a class="btn btn-teal" href="https://wa.me/10000000000">WhatsApp Us</a>
+            </div>
+            <p class="microcopy">
+              Gentle care for every smile • Comfort-focused treatments • Easy online booking
+            </p>
+            <div class="trust-list">
+              <div class="trust-item">✔ Experienced dental team</div>
+              <div class="trust-item">✔ Modern equipment</div>
+              <div class="trust-item">✔ Pain-conscious, gentle care</div>
+              <div class="trust-item">✔ Same-day emergency appointments*</div>
+            </div>
+          </div>
+          <div class="hero-card-wrap">
+            <div class="hero-image">
+              <div class="placeholder-visual">
+                Premium Clinic Visual Placeholder<br />
+                (Replace with smiling patient / dentist image)
+              </div>
+            </div>
+            <div class="ui-card">
+              <strong>Worried about pain or hidden costs?</strong>
+              <p>
+                We explain your treatment clearly, share transparent pricing discussions, and focus
+                on comfortable care at every step.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Clinic trust indicators">
+        <div class="container trust-grid">
+          <div>Advanced Dental Care</div>
+          <div>Personalized Plans</div>
+          <div>Family-Friendly Clinic</div>
+          <div>Sterile, Modern Setup</div>
+          <div>Emergency Slots Available</div>
+          <div>Transparent Pricing</div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Comprehensive Services</span>
+            <h2>Complete family and cosmetic dental care under one trusted roof.</h2>
+            <p>
+              Whether you need preventive care, advanced restorative treatment, or a confidence-
+              boosting cosmetic upgrade, our best dentist team in <strong>[City]</strong> is here to
+              help.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card"><div class="icon">🦷</div><h3>General Dentistry</h3><p>Routine exams and preventive care to keep your teeth and gums healthy year-round.</p><a class="link" href="#book">Book Now</a></article>
+            <article class="card"><div class="icon">✨</div><h3>Teeth Cleaning</h3><p>Professional teeth cleaning removes buildup and supports fresher breath and healthier gums.</p><a class="link" href="#book">Learn More</a></article>
+            <article class="card"><div class="icon">🛡️</div><h3>Fillings</h3><p>Tooth-colored fillings restore strength and appearance while preserving natural tooth structure.</p><a class="link" href="#book">Book Now</a></article>
+            <article class="card"><div class="icon">🔬</div><h3>Root Canal Treatment</h3><p>Gentle, precise treatment to save infected teeth and relieve persistent tooth pain.</p><a class="link" href="#book">Learn More</a></article>
+            <article class="card"><div class="icon">🌟</div><h3>Teeth Whitening</h3><p>Safe whitening solutions designed to brighten your smile with natural-looking results.</p><a class="link" href="#book">Book Now</a></article>
+            <article class="card"><div class="icon">🔩</div><h3>Dental Implants</h3><p>Strong, long-term tooth replacement that restores both function and confidence.</p><a class="link" href="#book">Learn More</a></article>
+            <article class="card"><div class="icon">📐</div><h3>Braces / Aligners</h3><p>Modern orthodontic options to align your smile comfortably and effectively.</p><a class="link" href="#book">Book Now</a></article>
+            <article class="card"><div class="icon">🎯</div><h3>Veneers</h3><p>Custom veneers crafted to improve shape, symmetry, and overall smile aesthetics.</p><a class="link" href="#book">Learn More</a></article>
+            <article class="card"><div class="icon">🧸</div><h3>Pediatric Dentistry</h3><p>Friendly, gentle care for children in a calm and welcoming environment.</p><a class="link" href="#book">Book Now</a></article>
+            <article class="card"><div class="icon">🚨</div><h3>Emergency Dental Care</h3><p>Fast support for sudden pain, trauma, swelling, or other urgent dental issues.</p><a class="link" href="#emergency">Get Help</a></article>
+            <article class="card"><div class="icon">🩺</div><h3>Tooth Extraction</h3><p>Safe, careful extraction with pain-conscious techniques and aftercare guidance.</p><a class="link" href="#book">Learn More</a></article>
+            <article class="card"><div class="icon">😁</div><h3>Smile Makeovers</h3><p>Personalized cosmetic treatment plans for healthier, brighter, confidence-boosting smiles.</p><a class="link" href="#book">Book Now</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background:#f6fbff;">
+        <div class="container choose-grid">
+          <div>
+            <span class="eyebrow">Why Choose Ayushi's Clinic</span>
+            <h2>Because dental care should feel safe, clear, and genuinely patient-first.</h2>
+            <p>
+              Many patients delay treatment due to fear of pain, unexpected costs, or disappointing
+              outcomes. We address these concerns proactively through clear communication, modern
+              diagnostics, and compassionate care.
+            </p>
+            <ul class="bullet-list">
+              <li>Experienced, caring dental professionals focused on precision and comfort.</li>
+              <li>Pain-conscious approach with comfort-focused treatment planning.</li>
+              <li>Clear treatment explanations so you always know your options.</li>
+              <li>No-pressure consultations with transparent cost discussions.</li>
+              <li>Clean, sterile, modern clinic environment you can trust.</li>
+              <li>Flexible scheduling for families and working professionals.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Patient-first promise</h3>
+            <p>
+              You will never be rushed into treatment. We listen first, diagnose carefully, and build
+              a plan that fits your goals, timeline, and budget.
+            </p>
+            <ul class="bullet-list">
+              <li>Fear of pain → gentle techniques + reassurance throughout.</li>
+              <li>Fear of hidden costs → transparent treatment and payment discussions.</li>
+              <li>Fear of poor results → evidence-based planning and quality follow-up.</li>
+              <li>Lack of trust → ethical recommendations and honest communication.</li>
+            </ul>
+            <a href="#book" class="btn btn-primary" style="margin-top:16px;">Request Consultation</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div>
+            <span class="eyebrow">About Ayushi's Clinic</span>
+            <h2>Modern dentistry rooted in ethics, empathy, and long-term oral health.</h2>
+            <p>
+              Ayushi's Clinic was created to redefine the dental experience — combining advanced
+              treatment with a warm, family-friendly atmosphere. Our mission is simple: deliver
+              excellent outcomes while making every patient feel heard, comfortable, and confident.
+            </p>
+            <p style="margin-top:12px;">
+              We emphasize hygiene, minimally invasive care, and preventive guidance so your smile
+              stays healthy for years, not just today.
+            </p>
+          </div>
+          <article class="card">
+            <h3>Meet the Dentist</h3>
+            <p><strong>Dr. Ayushi [Placeholder Last Name]</strong></p>
+            <p>
+              Expertise: Family dental care, cosmetic dentist treatments, restorative procedures,
+              anxiety-conscious dentistry.
+            </p>
+            <p>Experience: [X+ years placeholder]</p>
+            <p>Qualifications: [BDS/MDS/Certifications placeholder]</p>
+            <p style="margin-top:10px;">Update this profile with final credentials before launch.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" style="background:#f7fbff;">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Smile Transformations</span>
+            <h2>Real treatment journeys. Healthier smiles. More confidence.</h2>
+            <p>
+              Showcase before/after images here for smile makeovers, teeth whitening, aligners, and
+              restorative dentistry.
+            </p>
+          </div>
+          <div class="before-after">
+            <div class="ba-item"><div class="ba-image">Before/After Placeholder #1<br/>Teeth Whitening</div><p>Brighter, natural-looking smile with safe in-clinic whitening.</p></div>
+            <div class="ba-item"><div class="ba-image">Before/After Placeholder #2<br/>Aligners</div><p>Improved alignment for a balanced smile and better bite comfort.</p></div>
+            <div class="ba-item"><div class="ba-image">Before/After Placeholder #3<br/>Veneers</div><p>Refined shape and symmetry for a polished yet natural result.</p></div>
+          </div>
+          <p style="margin-top:12px;font-size:.85rem;">Disclaimer: Results vary by individual case and treatment plan.</p>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Patient Reviews</span>
+            <h2>Trusted by patients and families for compassionate, high-quality dental care.</h2>
+          </div>
+          <div class="testimonials">
+            <article class="card"><div class="stars">★★★★★</div><p>"I was nervous about pain, but the team explained everything and made me feel calm throughout."</p><p style="margin-top:8px;"><strong>Riya S.</strong></p></article>
+            <article class="card"><div class="stars">★★★★★</div><p>"Very clean clinic, friendly staff, and the dentist was incredibly patient with my child."</p><p style="margin-top:8px;"><strong>Ankit M.</strong></p></article>
+            <article class="card"><div class="stars">★★★★★</div><p>"My teeth whitening results look natural and I finally smile confidently in photos."</p><p style="margin-top:8px;"><strong>Neha P.</strong></p></article>
+            <article class="card"><div class="stars">★★★★★</div><p>"Emergency tooth pain was handled quickly. I got same-day care and clear aftercare guidance."</p><p style="margin-top:8px;"><strong>Vikas R.</strong></p></article>
+            <article class="card"><div class="stars">★★★★★</div><p>"No hidden surprises in treatment discussion. Transparent, ethical, and very professional."</p><p style="margin-top:8px;"><strong>Meera T.</strong></p></article>
+            <article class="card"><div class="stars">★★★★★</div><p>"Best dentist experience I've had in years — gentle treatment and excellent results."</p><p style="margin-top:8px;"><strong>Aditya K.</strong></p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top:50px;">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Simple Process</span>
+            <h2>From first contact to confident smile in 4 easy steps.</h2>
+          </div>
+          <div class="process-grid">
+            <div class="step"><div class="num">1</div><h3>Book Your Appointment</h3><p>Call, WhatsApp, or fill the online form in under 2 minutes.</p></div>
+            <div class="step"><div class="num">2</div><h3>Dental Evaluation</h3><p>Comprehensive check-up with clear diagnosis and digital insights.</p></div>
+            <div class="step"><div class="num">3</div><h3>Personalized Plan</h3><p>Get treatment options explained with timeline and cost guidance.</p></div>
+            <div class="step"><div class="num">4</div><h3>Smile with Confidence</h3><p>Receive quality care, follow-up support, and long-term oral health advice.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="emergency" class="section emergency">
+        <div class="container choose-grid">
+          <div>
+            <span class="eyebrow" style="color:#9cecff;">Emergency Dentist</span>
+            <h2>Dental emergency? Get urgent care now.</h2>
+            <p>
+              If you have sudden tooth pain, a broken tooth, swelling, bleeding gums, or dental
+              injury, contact us immediately for priority support.
+            </p>
+            <ul>
+              <li>Tooth pain</li>
+              <li>Broken/chipped tooth</li>
+              <li>Swelling or infection signs</li>
+              <li>Bleeding gums</li>
+              <li>Dental trauma/injury</li>
+            </ul>
+          </div>
+          <div class="card" style="background:#fff;">
+            <h3 style="color:#113c6b;">Need immediate help?</h3>
+            <p>Our team will guide you on first steps and schedule the earliest available slot.</p>
+            <div class="hero-actions" style="margin-top:14px;">
+              <a class="btn btn-primary" href="tel:+10000000000">Call Now</a>
+              <a class="btn btn-outline" href="#book">Book Emergency Visit</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container payment-grid">
+          <div>
+            <span class="eyebrow">Pricing, Insurance & Payments</span>
+            <h2>Clarity and affordability without compromising quality.</h2>
+            <ul class="bullet-list">
+              <li>Transparent treatment discussions before procedures begin.</li>
+              <li>Insurance assistance available (partner list placeholder).</li>
+              <li>Multiple payment options: card, UPI, cash, and more.</li>
+              <li>Financing/installment plans placeholder for eligible treatments.</li>
+              <li>Preventive and family dental care plans placeholder.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Insurance Partners (Placeholder)</h3>
+            <p>[Insurance Provider A] • [Insurance Provider B] • [Insurance Provider C]</p>
+            <h3 style="margin-top:14px;">Pricing Guide (Placeholder)</h3>
+            <p>
+              Add service-wise starting prices here for teeth cleaning, fillings, aligners,
+              whitening, and implants.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq" style="background:#f7fbff;">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Frequently Asked Questions</span>
+            <h2>Everything you need to know before your visit.</h2>
+          </div>
+          <details><summary>Do you accept walk-ins?</summary><p>Yes, walk-ins are accepted based on availability. For faster service and minimal waiting, we recommend booking ahead.</p></details>
+          <details><summary>How often should I get my teeth cleaned?</summary><p>Most patients benefit from professional teeth cleaning every 6 months. We may suggest a personalized schedule depending on oral health needs.</p></details>
+          <details><summary>Are dental treatments painful?</summary><p>We use pain-conscious methods and comfort-focused care to keep treatment as gentle as possible. Your comfort is continuously monitored.</p></details>
+          <details><summary>Do you treat children?</summary><p>Absolutely. Our pediatric dental care is family-friendly, gentle, and designed to make children feel safe and relaxed.</p></details>
+          <details><summary>How do I book an appointment?</summary><p>You can book instantly by phone, WhatsApp, or the online form below. Our team will contact you shortly to confirm your visit.</p></details>
+          <details><summary>What should I do in a dental emergency?</summary><p>Call us immediately for guidance. For severe pain, swelling, bleeding, or injury, we prioritize urgent evaluation as quickly as possible.</p></details>
+          <details><summary>Do you offer cosmetic dentistry?</summary><p>Yes. We provide teeth whitening, veneers, aligners, and smile makeovers with personalized planning for natural-looking outcomes.</p></details>
+          <details><summary>Do you accept insurance?</summary><p>We provide insurance assistance and can help you understand available options. Final coverage depends on your specific provider and plan.</p></details>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact-grid">
+          <div>
+            <span class="eyebrow">Contact & Location</span>
+            <h2>Visit Ayushi's Clinic in [City]</h2>
+            <p>
+              <strong>Address:</strong> [Full Address Placeholder], [City], [State], [Postal Code]<br />
+              <strong>Phone:</strong> <a href="tel:+10000000000">+1 (000) 000-0000</a><br />
+              <strong>Email:</strong> <a href="mailto:hello@ayushisclinic.com">hello@ayushisclinic.com</a><br />
+              <strong>Hours:</strong> Mon-Sat 9:00 AM - 7:00 PM (Placeholder)
+            </p>
+            <div class="hero-actions" style="margin-top:14px;">
+              <a class="btn btn-outline" href="#">Get Directions</a>
+              <a class="btn btn-outline" href="tel:+10000000000">Call Clinic</a>
+              <a class="btn btn-teal" href="https://wa.me/10000000000">WhatsApp</a>
+              <a class="btn btn-primary" href="#book">Book Appointment</a>
+            </div>
+          </div>
+          <div class="map" role="img" aria-label="Map placeholder">
+            Embedded Map Placeholder<br />
+            (Google Maps iframe/embed can be placed here)
+          </div>
+        </div>
+      </section>
+
+      <section id="book" class="section" style="background:#f7fbff;">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Book Appointment</span>
+            <h2>Take the first step toward a healthier smile today.</h2>
+            <p>Our team will contact you shortly to confirm your visit.</p>
+          </div>
+          <div class="form-card">
+            <form id="bookingForm" novalidate>
+              <div class="field-grid">
+                <div><label for="name">Full Name</label><input id="name" name="name" required /></div>
+                <div><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" required /></div>
+              </div>
+              <div class="field-grid">
+                <div><label for="email">Email</label><input id="email" name="email" type="email" /></div>
+                <div><label for="date">Preferred Date</label><input id="date" name="date" type="date" required /></div>
+              </div>
+              <div class="field-grid">
+                <div><label for="time">Preferred Time</label><input id="time" name="time" type="time" required /></div>
+                <div>
+                  <label for="service">Service Needed</label>
+                  <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option>General Dentistry</option>
+                    <option>Teeth Cleaning</option>
+                    <option>Root Canal Treatment</option>
+                    <option>Cosmetic Dentistry</option>
+                    <option>Dental Implants</option>
+                    <option>Pediatric Dentistry</option>
+                    <option>Emergency Dental Care</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us about your concern or goal..."></textarea>
+              </div>
+              <label class="check"><input type="checkbox" name="emergency" /> This is an emergency appointment request.</label>
+              <label class="check"><input type="checkbox" name="consent" required /> I consent to be contacted by Ayushi's Clinic regarding my appointment request.</label>
+              <button class="btn btn-primary" type="submit">Book My Appointment</button>
+              <p style="font-size:.84rem;">Micro-trust: Your details are used only for appointment coordination. [Privacy policy placeholder]</p>
+              <div id="success" class="success" role="status" aria-live="polite">
+                Thank you! Your request has been received. Our team will contact you shortly to confirm your visit.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a class="floating-whatsapp" href="https://wa.me/10000000000" aria-label="Chat on WhatsApp">
+      <span class="btn btn-teal">WhatsApp</span>
+    </a>
+
+    <div class="mobile-sticky" aria-label="Quick booking actions">
+      <a class="btn btn-outline" href="tel:+10000000000">Call Now</a>
+      <a class="btn btn-primary" href="#book">Book Now</a>
+    </div>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <h3>Ayushi's Clinic</h3>
+          <p>
+            Premium, ethical, and compassionate dental clinic focused on comfort, hygiene, and
+            confident smiles.
+          </p>
+          <p style="margin-top:10px;">Review badge placeholders: [Google] [Practo] [Local Listing]</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <p><a href="#home">Home</a></p>
+          <p><a href="#about">About</a></p>
+          <p><a href="#testimonials">Testimonials</a></p>
+          <p><a href="#faq">FAQ</a></p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <p>Teeth Cleaning</p>
+          <p>Cosmetic Dentist</p>
+          <p>Dental Implants</p>
+          <p>Emergency Dentist</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>[Phone Placeholder]</p>
+          <p>[Email Placeholder]</p>
+          <p>[Address Placeholder]</p>
+          <p>Social: [Instagram] [Facebook] [YouTube]</p>
+        </div>
+      </div>
+      <div class="container" style="margin-top:24px;border-top:1px solid #274b75;padding-top:16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+        <p>© <span id="year"></span> Ayushi's Clinic. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> • <a href="#">Terms</a></p>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById('menuBtn');
+      const mainNav = document.getElementById('mainNav');
+      const navCta = document.getElementById('navCta');
+      menuBtn.addEventListener('click', () => {
+        mainNav.classList.toggle('open');
+        navCta.classList.toggle('open');
+      });
+
+      const form = document.getElementById('bookingForm');
+      const success = document.getElementById('success');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        success.style.display = 'block';
+        form.reset();
+      });
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      setTimeout(() => {
+        if (!sessionStorage.getItem('reminderShown')) {
+          alert('Need help deciding? Book a no-pressure consultation at Ayushi\'s Clinic.');
+          sessionStorage.setItem('reminderShown', '1');
+        }
+      }, 45000);
+    </script>
+  </body>
+</html>
